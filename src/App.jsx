@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import './App.css'
-import { Navbar } from './components'
+import { Navbar, CartContainer } from './components'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,7 +7,7 @@ function App() {
   return (
     <main>
       <Navbar/>
-      <h2>Redux Toollit</h2>
+      <CartContainer/>
     </main>
   )
 }
