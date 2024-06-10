@@ -1,5 +1,8 @@
 import React from 'react'
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
+{/* <FaChevronUp />
+<FaChevronDown /> */}
+
 
 const CartItem = ({id, img, title, price, amount}) => {
   // console.log(title);
