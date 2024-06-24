@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import { useDispatch } from 'react-redux';
-import { removeItem, increase, decrease } from '../features/cart/cartSlice';
+import { removeItem, increase, decrease, calculateTotals } from '../features/cart/cartSlice';
 
 
 

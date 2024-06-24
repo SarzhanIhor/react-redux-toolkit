@@ -8,6 +8,7 @@ import { clearCart } from '../features/cart/cartSlice'
 const CartContainer = () => {
     const dispatch = useDispatch()
 const {cartItems, total, amount} = useSelector(state => state.cart)
+// console.log(total);
 // console.log(amount);
 // if (amount < 1) { 
 //     return ( 
@@ -26,7 +27,8 @@ const {cartItems, total, amount} = useSelector(state => state.cart)
     return (
     <section className='cart'>
         <header>
-            <h2>Your bag
+            <h2>
+                Your bag
             </h2>
         </header>
         <div>
@@ -43,7 +45,7 @@ const {cartItems, total, amount} = useSelector(state => state.cart)
             <div className="cart-total">
                 <h4>
                     total <span>
-                        {total}
+                        ${total.toFixed(2)}
                     </span>
                 </h4>
             </div>
