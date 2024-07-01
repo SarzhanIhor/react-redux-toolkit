@@ -1,7 +1,7 @@
 import React from 'react'
 import CartItem from './CartItem'
 import { useDispatch, useSelector } from 'react-redux'
-import { clearCart } from '../features/cart/cartSlice'
+import { openModule } from '../features/module/moduleSlice'
 
 
 
@@ -49,7 +49,7 @@ const {cartItems, total, amount} = useSelector(state => state.cart)
                     </span>
                 </h4>
             </div>
-            <button className="btn clear-btn" onClick={() => dispatch(clearCart())}>Clear Cart</button>   
+            <button className="btn clear-btn" onClick={() => dispatch(openModule())}>Clear Cart</button>   
         </footer>
     </section>
     )
